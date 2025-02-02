@@ -6,12 +6,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 Website hosted on - (https://quiz-flow-lake.vercel.app)
 
 ## Getting Started
-- [Getting Started with Python](#1-installation)
-  - [1. Installation](#1-installation)
-  - [2. Creating an agent & executing a tool](#2-creating-an-agent--executing-a-tool)
--[Prerequisites](#1-Node.js (v16 or higher))
-  - [1. Node.js (v16 or higher)](#1-Node.js (v16 or higher))
-  -[2. npm (v8 or higher)](#2-npm (v8 or higher))
+
+### Prerequisites
+
+1. Node.js (v16 or higher)
+
+2. npm (v8 or higher)
+
 
 ## Installation
 
