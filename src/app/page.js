@@ -11,7 +11,7 @@ export default function LandingPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen  text-[#2b275d] font-poppins">
-      {/* Left Side - Text */}
+ 
       <div className="w-[48%] flex flex-col justify-center pl-12">
         <h1 className="text-4xl  mb-2">Test Your Knowledge</h1>
         <p className="text-6xl font-bold mb-6">
@@ -25,11 +25,10 @@ export default function LandingPage() {
           List of Quizzes
         </button>
       </div>
-      
-      {/* Right Side - Image */}
+   
       <div className="w-[48%] flex justify-center pr-12">
         <Image 
-          src="/IMG_6736.gif" // Replace with your actual image path
+          src="/IMG_6736.gif" 
           alt="Quiz Illustration"
           width={600} 
           height={600} 

@@ -39,9 +39,9 @@ export default function QuizPage() {
       const selectedOptionId = answers[question.id];
       if (selectedOptionId) {
         const selectedOption = question.options.find(
-          (option) => option.id === selectedOptionId
+          (option) => option.id == selectedOptionId
         );
-        if (selectedOption.isCorrect) {
+        if (selectedOption.is_correct) {
           score += 4;
         } else {
           score -= 1;
@@ -81,7 +81,7 @@ export default function QuizPage() {
                 type="radio"
                 name={`question-${question.id}`}
                 value={option.id}
-                checked={answers[question.id] === option.id}
+                checked={answers[question.id] == option.id}
                 onChange={() => setAnswers({ ...answers, [question.id]: option.id })}
                 className="form-radio h-5 w-5 text-purple-600"
               />

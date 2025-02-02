@@ -65,11 +65,10 @@ export default function ResultsPage() {
 </div>
 
       </div>
-      
-      {/* Right Side - GIF */}
+    
       <div className="w-[48%] flex ml-[10%] justify-center">
         <Image 
-          src="/IMG_6738.gif" // Replace with your actual GIF path
+          src="/IMG_6738.gif" 
           alt="Quiz Celebration GIF"
           width={500} 
           height={500} 
