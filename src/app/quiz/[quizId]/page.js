@@ -42,19 +42,19 @@ export default function QuizPage() {
           (option) => option.id === selectedOptionId
         );
         if (selectedOption.isCorrect) {
-          score += 4; // +4 for correct answer
+          score += 4;
         } else {
-          score -= 1; // -1 for wrong answer
+          score -= 1;
         }
       }
-      // 0 points for unanswered questions
+     
     });
     return score;
   };
 
   const handleSubmit = () => {
     const score = calculateScore();
-    router.push(`/quiz/${quizId}/results?score=${score}`); // Redirect to results page with score
+    router.push(`/quiz/${quizId}/results?score=${score}`);
   };
 
   if (loading) return <p className="text-center text-gray-600">Loading quiz...</p>;
@@ -97,7 +97,7 @@ export default function QuizPage() {
       <div className="text-center">
         <button
           onClick={handleSubmit}
-          className="px-8 py-3 bg-indigo-900 text-white font-semibold rounded-lg hover:bg-teal-600 transition duration-200"
+          className="px-8 py-3 bg-gradient-to-br from-[#158e8c] to-[#2b275d] text-white  w-80 rounded-full text-white font-semibold hover:bg-teal-600 transition duration-200"
         >
           Submit Quiz
         </button>

@@ -1,12 +1,9 @@
 import { QuizProvider } from "./context/QuizContext";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar"; // Import the Navbar component
+import Navbar from "./components/Navbar"; 
 
-const poppins = Poppins({
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-});
+
 
 export const metadata = {
   title: "Quiz Flow",
@@ -16,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-indigo-900">
+      <body className="bg-gray-200 text-[#2b275d]">
         <QuizProvider>
-          <Navbar /> {/* Add the Navbar here */}
+          <Navbar /> 
           {children}
         </QuizProvider>
       </body>

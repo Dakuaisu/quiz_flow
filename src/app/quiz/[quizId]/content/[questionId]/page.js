@@ -15,7 +15,7 @@ export default function ContentSectionsPage() {
 
   return (
     <section className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-3xl font-bold text-purple-600 mb-8">
+      <h1 className="text-3xl font-bold mb-8">
         Content Sections for Question {questionId}
       </h1>
 
@@ -29,7 +29,7 @@ export default function ContentSectionsPage() {
 
 <button
           onClick={() => router.push(`/quiz/${quizId}/correct-answers`)}
-          className="py-2 px-6 bg-indigo-900 text-white font-semibold rounded-lg hover:bg-teal-600 transition duration-300"
+          className="py-2 px-6 bg-gradient-to-br from-[#158e8c] to-[#2b275d] text-white  w-80 rounded-full text-white font-semibold hover:bg-teal-600 transition duration-300"
         >
           Back to Correct Answers
         </button>

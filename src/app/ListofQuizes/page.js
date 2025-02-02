@@ -29,12 +29,13 @@ export default function Quizzes() {
     fetchData();
   }, [setGlobalQuiz]);
 
-  if (loading) return <p className="flex flex-col items-center text-white justify-center min-h-screen text-5xl font-bold mb-4">Loading quizzes...</p>;
+  if (loading) return <p className="flex flex-col items-center justify-center min-h-screen text-5xl font-bold mb-4">Loading quizzes...</p>;
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white font-poppins text-center">
+    <div className="flex flex-col items-center mt-20 min-h-screen font-poppins text-center">
       <h1 className="text-5xl font-bold mb-4">List of Quizzes</h1>
+      <p className="text-xl mb-10 text-black  ">Click on the desired quiz to start</p>
       
       <a
         href={`/quiz/${quiz.id}`}
@@ -43,7 +44,7 @@ export default function Quizzes() {
           router.push(`/quiz/${quiz.id}`);
         }}
       >
-        <h2 className="text-2xl ">{quiz.id} - {quiz.title}</h2>
+        <h2 className="text-3xl underline ">{quiz.id} - {quiz.title}</h2>
       </a>
     </div>
   );
